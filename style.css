@@ -25,16 +25,20 @@ body
 .links
 {
 	display:flex;
+	flex-direction: row;
 	justify-content: space-around;
 	width: 40%;
 }
 .links a
 {
 	color: rgb(106,156,226);
-	text-decoration: none;
 	font-weight: bold;
 	letter-spacing: 3px;
 	font-size: 20px;
+}
+a
+{
+	text-decoration: none;
 }
 a:hover
 {
@@ -52,12 +56,17 @@ a:hover
 	margin: 5px;
 	transition: all 0.3s ease-in;
 }
-
-@media screen and (max-width:1024px)
+.content
 {
-	.links a
+	font-size: 25px;
+	padding-left: 5vw;
+	padding-top: 5vh;
+}
+@media screen and (max-width:1440px)
+{
+	.links 
 	{
-		width:80%;
+		width:70%;
 	}
 }
 
@@ -72,12 +81,12 @@ a:hover
 		top: 6vh;
 		left:0px;
 		background-color: rgb(45,45,65);
-		width:30%;
+		width:32vw;
 		visibility: collapse;
 	}
 	.links a
 	{
-		padding-left: 2vh;
+		padding-left: 2vw;
 		cursor: pointer;
 		opacity: 0;
 	}
@@ -108,7 +117,7 @@ a:hover
 }
 .slide
 {
-	transform: translateX(25vh);
+	transform: translateX(34vw);
 }
 .toggle .line1
 {

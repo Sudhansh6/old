@@ -9,6 +9,24 @@
 	<link rel="icon" href = Pictures/s.png>
 	<style>
 		#Academics { color:rgb(226,226,126); }
+		.items li
+		{
+			list-style: none;
+			background-color: silver;
+			padding-top: 1vh;
+			padding-bottom: 1vh;
+			padding-left: 2vw;
+			height:15vh*2vw;
+			border:outset 5px azure;
+			border-radius: 25px;	
+		}
+		.link
+		{
+			padding-right: 2vw;
+			font-size: 40px;
+			font-weight: bold;
+			float: right;	
+		}
 	</style>
 	<title>Academics</title>
 </head>
@@ -21,16 +39,21 @@
 		</div>
 		<div class = "links">
 			<a href='index.html' id=Home>Home</a>
-			<a href='about.html' id=About>About</a>
 			<a href='academics.html' id=Academics>Academics</a>
+			<a href='projects.html' id=Projects>Projects</a>
+			<a href='contact.html' id=Contact> Contact me</a>
 		</div>
 		<div class = "logo">
 			<h2> Sudhansh </h2>
 		</div>	
 	</nav>
 	<div class = content>
-		Please come back and check again later :) <br>
-		Sorry for the inconvenience caused.
+		<ul class = items>
+			<li>
+				Here is the report I have written on <b>Stock Analysis</b>. It covers the basics of Stocks markets and stocks. I also wrote about <i>Options trading</i> and <i>Technical Analysis</i> of stocks.
+				<a href = https://github.com/Sudhansh6/SoS_20_Stock_Analysis/blob/master/README.md class = link>></a>
+			</li>
+		</ul>
 	</div>
 </body>
 </html>
