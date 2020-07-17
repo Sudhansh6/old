@@ -3,9 +3,10 @@ const navSlide = () =>
 	const burger = document.querySelector('.burger');
 	const nav = document.querySelector('.links');
 	const navLinks = document.querySelectorAll('.links a');
+	const content = document.querySelector('.content');
 	
 	burger.addEventListener('click',()=> {
-
+		content.classList.toggle('slide');
 		nav.classList.toggle('nav-active');
 		burger.classList.toggle('toggle');
 		navLinks.forEach((link,index)=> {
