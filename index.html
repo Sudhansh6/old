@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style >
-		@import "{{ site.theme }}";
-		.nav-bar button:hover
-		{
-			background: gray;
-		}
-	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee&family=Luckiest+Guy&display=swap" rel="stylesheet"> 
+	<link rel = "stylesheet" href = style.css>
+	<link rel="icon" href = Pictures/s.png>
+	<script src = script.js></script>
+
 	<title>"Home"</title>
 </head>
 <body>
-	<div class = "nav-bar">
-			<button onclick="window.location.href='index.html';">Home</button>
-			<button onclick="window.location.href='about.html';">About</button>
-			<button onclick="window.location.href='academics.html';">Academics</button>
-	</div>
+	<nav>
+		<div class = "logo">
+			<h2> Sudhansh </h2>
+		</div>
+		<div class = "links">
+			<a href='index.html'>Home</a>
+			<a href='about.html'>About</a>
+			<a href='academics.html'>Academics</a>
+		</div>
+		<div class="burger">
+			<div class ="line1"></div>
+			<div class ="line2"></div>
+			<div class ="line3"></div>
+		</div>
+	</nav>
 	<h2>HOME</h2>
-	<p>
+	<div>
 		Hi! You've reached my webpage. Feel free to explore!
-	</p>
+	</div>
+
 </body>
 </html>
