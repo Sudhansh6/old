@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee&family=Luckiest+Guy&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee&family=Hind&display=swap" rel="stylesheet">
 	<link rel = "stylesheet" href = style.css>
 	<script src = script.js></script>
 	<link rel="icon" href = Pictures/s.png>
@@ -12,13 +12,12 @@
 		.items li
 		{
 			list-style: none;
-			background-color: silver;
-			padding-top: 1vh;
-			padding-bottom: 1vh;
-			padding-left: 2vw;
+			background-color: rgb(220,220,240);
+			padding: 20px 20px;
 			height:15vh*2vw;
-			border:outset 5px azure;
-			border-radius: 25px;	
+			box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+			border-radius: 10px;
+			width: 90%;
 		}
 		.link
 		{
@@ -37,12 +36,12 @@
 			<div class ="line2"></div>
 			<div class ="line3"></div>
 		</div>
-		<div class = "links">
-			<a href='index.html' id=Home>Home</a>
-			<a href='academics.html' id=Academics>Academics</a>
-			<a href='projects.html' id=Projects>Projects</a>
-			<a href='contact.html' id=Contact> Contact me</a>
-		</div>
+		<ul class = "links">
+			<li><a href='index.html' id=Home>Home</a></li>
+			<li><a href='academics.html' id=Academics>Academics</a></li>
+			<li><a href='projects.html' id=Projects>Projects</a></li>
+			<li><a href='contact.html' id=Contact> Contact me</a></li>
+		</ul>
 		<div class = "logo">
 			<h2> Sudhansh </h2>
 		</div>	
@@ -51,9 +50,12 @@
 		<ul class = items>
 			<li>
 				Here is the report I have written on <b>Stock Analysis</b>. It covers the basics of Stocks markets and stocks. I also wrote about <i>Options trading</i> and <i>Technical Analysis</i> of stocks.
-				<a href = https://github.com/Sudhansh6/SoS_20_Stock_Analysis/blob/master/README.md class = link>></a>
+				<a href = https://github.com/Sudhansh6/SoS_20_Stock_Analysis/blob/master/README.md class = link> > </a>
 			</li>
 		</ul>
 	</div>
+	<footer>
+		All rights reserved
+	</footer>
 </body>
 </html>

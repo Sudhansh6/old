@@ -3,56 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee&family=Luckiest+Guy&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee&family=Hind&display=swap" rel="stylesheet">
 	<link rel = "stylesheet" href = style.css>
+	<link rel = "stylesheet" href = contact.css>
 	<script src = script.js></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="icon" href = Pictures/s.png>
 	<style>
 		#Contact { color:rgb(226,226,126); }
 	</style>
-	<style>	
-		.fa {
-			  padding: 20px;
-			  font-size: 30px;
-			  width: 10vh;
-			  text-align: center;
-			  text-decoration: none;
-			  margin: 5px 2px;
-			}
-		}
-		.social{
-			float:left;
-			width: 100%;
-		}
-		.fa:hover {
-		    opacity: 0.7;
-		}
-
-		.fa-facebook {
-		  background: #3B5998;
-		  color: white;
-		}
-
-		.fa-twitter {
-		  background: #55ACEE;
-		  color: white;
-		}
-		.fa-linkedin {
-		  background: #007bb5;
-		  color: white;
-		}
-		.fa-instagram {
-		  background: #f40083;
-		  color: white;
-		}
-		.fa-snapchat-ghost {
-		  background: #fffc00;
-		  color: white;
-		  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-		}
-	</style>
-	<title>About</title>
+	<title>Contact</title>
 </head>
 <body background-color:Blue;>
 	<nav>
@@ -61,31 +21,48 @@
 			<div class ="line2"></div>
 			<div class ="line3"></div>
 		</div>
-		<div class = "links">
-			<a href='index.html' id=Home>Home</a>
-			<a href='academics.html' id=Academics>Academics</a>
-			<a href='projects.html' id=Projects>Projects</a>
-			<a href='contact.html' id=Contact> Contact me</a>
-		</div>
+		<ul class = "links">
+			<li><a href='index.html' id=Home>Home</a></li>
+			<li><a href='academics.html' id=Academics>Academics</a></li>
+			<li><a href='projects.html' id=Projects>Projects</a></li>
+			<li><a href='contact.html' id=Contact> Contact me</a></li>
+		</ul>
 		<div class = "logo">
 			<h2> Sudhansh </h2>
 		</div>	
 	</nav>
 	<div class = content>
-		<form>
-			<input type = name>Enter your name
-			<input type = name>Enter your message
-		</form>
-		<div>
-				You can reach out to me on any of the following platforms!
-		</div>
-		<div class = "social">
-			<a href=https://www.facebook.com/sudhansh.peddabomma/ class="fa fa-facebook"></a>
-			<a href=https://www.instagram.com/__macaroni_/?hl=en class="fa fa-instagram"></a>
-			<a href=https://www.snapchat.com/add/sudhansh6 class="fa fa-snapchat-ghost"></a>
-			<a href=https://twitter.com/sudhanshpeddab1 class="fa fa-twitter"></a>
-			<a href=https://www.linkedin.com/in/sudhansh-p-73a208192/ class="fa fa-linkedin"></a>
-		</div>
+			<form action="https://formspree.io/xyynbvap" class = form method="POST">
+				<div class = section>
+					<label>Name</label>
+					<input type="text">
+				</div>
+				<div class = section>
+					<label>Email</label>
+					<input type="text"name="_replyto">
+				</div>
+				<div class = section>
+					<label>Message</label>
+					<textarea name="message"></textarea><br>
+				</div>
+			  	<button type="submit">Send</button>
+			</form>
+			<div class = social>
+				<br><br>You can reach out to me on any of the following platforms!<br>
+			</div>
+			<div class = icons>
+				<ul>
+					<li><a href=https://www.facebook.com/sudhansh.peddabomma/ class="fa fa-facebook"></a></li>
+					<li><a href=https://www.instagram.com/__macaroni_/?hl=en class="fa fa-instagram"></a></li>
+					<li><a href=https://www.snapchat.com/add/sudhansh6 class="fa fa-snapchat-ghost"></a></li>
+					<li><a href=https://twitter.com/sudhanshpeddab1 class="fa fa-twitter"></a></li>
+					<li><a href=https://www.linkedin.com/in/sudhansh-p-73a208192/ class="fa fa-linkedin"></a></li>
+				</ul>
+			</div>
+			<div class = image></div>		
 	</div>
+	<footer>
+		All rights reserved
+	</footer>
 </body>
 </html>

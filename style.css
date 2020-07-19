@@ -7,13 +7,9 @@ nav{
 	display:flex;
 	justify-content:space-around;
 	align-items: center;
-	min-height: 6vh;
+	min-height: 50px;
 	background-color: rgb(45,45,65);
 	font-family: 'Audiowide', cursive;
-}
-body
-{
-	background-color: gray;
 }
 .logo
 {
@@ -25,19 +21,22 @@ body
 .links
 {
 	display:flex;
-	flex-direction: row;
-	justify-content: space-around;
-	width: 40%;
+	justify-content: space-around; /*You need to define the space using width*/
+	width: 60%;
+}
+li
+{
+	list-style-type: none;
 }
 .links a
 {
+	font-family: 'Bungee', cursive;
 	color: rgb(106,156,226);
-	font-weight: bold;
 	letter-spacing: 3px;
 	font-size: 20px;
+	text-decoration: none;
 }
-a
-{
+a{
 	text-decoration: none;
 }
 a:hover
@@ -58,10 +57,14 @@ a:hover
 }
 .content
 {
-	font-size: 25px;
-	padding-left: 5vw;
+	font-family: 'Hind', sans-serif;
+	font-size: 30px;
+	margin-top: 5vh;
+	padding-left: 2vw;
 	padding-top: 5vh;
+	margin:5vw;
 }
+
 @media screen and (max-width:1440px)
 {
 	.links 
@@ -70,25 +73,26 @@ a:hover
 	}
 }
 
-@media screen and (max-width:768px)
+@media screen and (max-width:800px)
 {
 	.links
 	{
 		position: absolute;
+		justify-content: space-around;
 		display: flex;
 		flex-direction: column;
 		height: 100%;
-		top: 6vh;
+		top: 50px;
 		left:0px;
 		background-color: rgb(45,45,65);
-		width:32vw;
-		visibility: collapse;
+		width:35vw;
+		visibility: hidden;
 	}
-	.links a
+	.links li
 	{
 		padding-left: 2vw;
 		cursor: pointer;
-		opacity: 0;
+		opacity:0;
 	}
 	.burger
 	{
@@ -96,28 +100,38 @@ a:hover
 		cursor: pointer;
 	}
 }
-
+@media screen and (max-width: 800px)
+{
+	.content
+	{
+		margin-left: 0px;
+	}
+}
 @keyframes navLinkFade
 {
 	from
 	{
-		opacity:0;
-		transform:translateX(-50px);
+		opacity: 0;
+		transform: translateX(-50px);
 	}
 	to
 	{
-		opacity:1;
+		opacity: 1;
 		transform: translateX(0px);
+	}
+}
+@keyframes appear
+{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity:1;
 	}
 }
 .nav-active
 {
-	transition: transform 0.5s ease-in;
 	visibility: visible;
-}
-.slide
-{
-	transform: translateX(34vw);
 }
 .toggle .line1
 {
@@ -130,4 +144,18 @@ a:hover
 .toggle .line3
 {
 	transform: rotate(45deg) translate(0px,-10px);
+}
+footer
+{
+	justify-content: space-around;
+	width:100%;
+	display: flex;
+	align-items: center;
+	background-color: rgb(45,45,65);
+    color: rgb(255,255,255);
+	padding: 15px 0px;
+}
+body
+{
+	background-color: rgb(230,230,250);
 }

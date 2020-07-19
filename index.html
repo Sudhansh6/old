@@ -3,14 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee&family=Luckiest+Guy&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee&family=Hind&display=swap" rel="stylesheet">
 	<link rel = "stylesheet" href = style.css>
+	<link rel = "stylesheet" href = index.css>
 	<link rel="icon" href = Pictures/s.png>
 	<script src = script.js></script>
+	<script src="float-panel.js"></script>
 	<style>
 		#Home { color:rgb(226,226,126); }
 	</style>
-	<title>"Home"</title>
+	<title>Home</title>
 </head>
 <body>
 	<nav>
@@ -19,28 +21,71 @@
 			<div class ="line2"></div>
 			<div class ="line3"></div>
 		</div>
-		<div class = "links">
-			<a href='index.html' id=Home>Home</a>
-			<a href='academics.html' id=Academics>Academics</a>
-			<a href='projects.html' id=Projects>Projects</a>
-			<a href='contact.html' id=Contact> Contact me</a>
-		</div>
+		<ul class = "links">
+			<li><a href='index.html' id=Home>Home</a></li>
+			<li><a href='academics.html' id=Academics>Academics</a></li>
+			<li><a href='projects.html' id=Projects>Projects</a></li>
+			<li><a href='contact.html' id=Contact> Contact me</a></li>
+		</ul>
 		<div class = "logo">
 			<h2> Sudhansh </h2>
 		</div>	
 	</nav>
 	<div class = content>
-		Hi! You've reached my webpage. Feel free to explore!
-		<h1> About me!</h1>
-		<div class="column">
-		<img src="Pictures/pic.jpg" height="300">
+		<div class= span>
+			Hi! You've reached my webpage. Feel free to explore! <br>
+			PS. Please do not hesitate from providing suggestions to make it better.<br> Appreciate your help :)
 		</div>
-		<div class="column">
-			<p><font face = arial size = "4" >
-				Hi! This is Sudhansh. I am a 2nd year undergraduate pursuing Computer Science at IITBombay. I like listening to music and I play keyboard at times. Here's the <a href = https://open.spotify.com/playlist/0mx6Em7zHKUVn8FCnC44d0?si=T9tEeXbtS-SHfDKcS0T8fA>link</a> to my playlist on Spotify. 
-			</font></p>
+		<div class= "image left">
+			<img src="Pictures/pic.jpg" height=300px style = 'margin-left: 80px;'>
 		</div>
+
+		<div class = right>
+			Hi! This is Sudhansh. I am a 2nd year undergraduate pursuing Computer Science at IITBombay. 
+		</div> 
+		<div class = span> You can find more about me here</div>
+		<div class = cards>
+			<div class="card slideanim">
+			    <img src="Pictures/music.png" style="height:200px" class = thumbnail>
+			    <div class="container">
+				    <h4><b>Music</b></h4>
+				    <p>I like listening to music and I play keyboard at times. Here's the <a href = https://open.spotify.com/playlist/0mx6Em7zHKUVn8FCnC44d0?si=T9tEeXbtS-SHfDKcS0T8fA>link</a> to my playlist on Spotify.</p>
+				</div>
+			</div>
+			<div class="card slideanim">
+				<div class="container">
+				    <h4><b>TV Shows</b></h4>
+				    <p>Sherlock, TBBT, The Office, Suits, Flash, The Mentalist ..<br> You can talk to me about all of these.</p>
+				</div>
+			    <img src="Pictures/tv.png" style="height:200px" class = thumbnail>    
+			</div>
+			<div class="card slideanim">
+			    <img src="Pictures/games.png" style="height:200px" class = thumbnail>
+			    <div class="container">
+				    <h4><b>Games</b></h4>
+				    <p>Love those old DOS games. Currently spending a lot of time on Minecraft. Designed any? No.</p>
+				</div>
+			</div>
+			<div class="card slideanim">
+				<div class="container">
+				    <h4><b>Movies</b></h4>
+				    <p>Stay away from me if you have spoilers. Movie fanatic, yes. Marvel franchise, always welcome. </p>
+				</div>
+			    <img src="Pictures/movies.png" style="height:200px" class = thumbnail>
+			</div>
+			<div class="card slideanim">
+			    <img src="Pictures/sports.png" style="height:200px" class = thumbnail>
+			    <div class="container">
+				    <h4><b>Sports</b></h4>
+				    <p>I play badminton, chess, basketball, volleyball and carroms(;P). If you want to play something else, I will surely give it a try.</p>
+				</div>
+			</div>
+		</div>
+		
 	</div>
+	<footer>
+		All rights reserved
+	</footer>
 
 </body>
 </html>

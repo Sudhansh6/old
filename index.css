@@ -1,0 +1,81 @@
+.card {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    justify-content: space-around;
+    background-color: rgb(220,220,240);
+    margin: 20px 10px;
+}
+.thumbnail
+{
+	margin: 10px 30px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.cards
+{
+	justify-content: space-around;
+}
+.container {
+  border-left:groove;
+  border-right: groove;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  padding: 5px 16px;
+  align-items: center;
+}
+.image
+{
+	height: 300px;
+	padding-right: 300px;
+}
+@media screen and (max-width: 800px)
+{
+	.content, .card
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	.container
+	{
+		border:none;
+	}
+}
+.left
+{
+	grid-column: 2/3;
+}
+.right
+{
+	margin-top: 100px;
+	margin-left: 25px;
+	grid-column: 3/4;
+}
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {                  
+    visibility: visible;                  
+    animation: slide 0.5s;
+}
+.slideanim::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
