@@ -77,9 +77,9 @@ input, textarea
 {
 	border:none;
 	border-bottom: solid rgb(200,200,220);
-	margin-bottom: 2vh;
 	background-color: rgb(220,220,240);
 	resize: none;
+	font-size: 20px;
 }
 input:focus, textarea:focus
 {

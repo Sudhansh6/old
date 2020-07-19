@@ -43,9 +43,9 @@
 				</div>
 				<div class = section>
 					<label>Message</label>
-					<textarea name="message"></textarea><br>
+					<textarea name="message"></textarea>
 				</div>
-			  	<button type="submit">Send</button>
+			  	<button type="submit" id = submit>Send</button>
 			</form>
 			<div class = social>
 				<br><br>You can reach out to me on any of the following platforms!<br>
@@ -64,5 +64,19 @@
 	<footer>
 		All rights reserved
 	</footer>
+	<script>
+		const submit = document.querySelector('#submit');
+		const input = document.querySelectorAll('input[type=text]');
+		const text = document.querySelector('textarea')
+		submit.addEventListener('click',()=>
+		{
+			text.value = '';
+			input.forEach((x)=>
+			{
+				console.log(x.name);
+				x.value = '';
+			});
+		});
+	</script>
 </body>
 </html>

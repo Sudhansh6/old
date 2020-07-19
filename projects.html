@@ -3,12 +3,47 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee&family=Hind&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee&family=Hind&family=Lexend+Zetta&display=swap" rel="stylesheet">
 	<link rel = "stylesheet" href = style.css>
 	<script src = script.js></script>
 	<link rel="icon" href = Pictures/s.png>
 	<style>
 		#Projects { color:rgb(226,226,126); }
+		.container
+		{
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height:100vh;
+		}
+		.description
+		{
+			font-family: 'Lexend Zetta', sans-serif;
+			text-transform: uppercase;
+			text-align: center;
+			height:800px;
+			background-color: rgb(50,50,60);
+			color: white;
+			font-size: 30px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			padding: 0px 20px;
+		}
+		@media screen and (max-width: 800px)
+		{
+			.description
+			{
+				font-size: 15px;
+				text-align: center;
+			}
+			h2
+			{
+				font-size: 30px;
+				text-align: center;
+			}
+		}
 	</style>
 	<title>Projects</title>
 </head>
@@ -29,10 +64,40 @@
 			<h2> Sudhansh </h2>
 		</div>	
 	</nav>
-	<div class = content>
-		Please come back later.<br>
-		Sorry for the inconvenience caused :)
-	</div>
+	<div class = container style = 'background-image: url(Pictures/project.jpg);'></div>
+			<div class = description>
+			<h2> Here is the list of projects I've done...</h2>
+			</div>
+		<div class = container style = 'background-image: url(Pictures/xlr8.png);'></div>
+		<div class = description>
+			<h1>XLR8</h1>
+			<p>A bot controlled by bluetooth using your handset, custom made to pass an obastacle course. It is powered by a lead-acid battery and the motors are controlled by a microcontroller.</p>
+		</div>
+		<div class = container style = 'background-image: url(Pictures/ic.jpg);'></div>
+		<div class = description>
+			<h1>Invisibility Cloak</h1>
+			<p>Sounds cool, doesn't it. I used Python and OpenCV library to mimic the Harry Potter Invisibility cloak. I captures the color of the cloak and replaces that part of the picture with the background.</p>
+		</div>
+		<div class = container style = 'background-image: url(Pictures/sudoku.jpg);'></div>
+		<div class = description>
+			<h1>Sudoku Solver</h1>
+			<p>Another computer vision project which detects a sudoku board from live feed , uses machine learning to recognise digits in their respective slots and solves the puzzle using algorithms.</p>
+		</div>
+		<div class = container style = 'background-image: url(Pictures/vk.png);'></div>
+		<div class = description>
+			<h1>Virtual Keyboard</h1>
+			<p>Did you know that you can give input to your computer using just a printed keyboard layout, a camera and a program? The camera feeds in live video to the computer and the frames are processed using OpenCV(python) to detect the key tapped by your finger and taking the input correspondingly. </p>
+		</div>
+		<div class = container style = 'background-image: url(Pictures/ptt.png);'></div>
+		<div class = description>
+			<h1>pixels-to-text</h1>
+			<p>This was just a fun project that I used to get accustomed to HTML,CSS and JavaScript. It takes a picture, reads the color at each pixel and displays it in form of text.</p>
+		</div>
+		<div class = container style = 'background-image: url(Pictures/kivy.png);'></div>
+		<div class = description>
+			<h1>Water Reminder app</h1>
+			<p>A GUI application to remind you to drink your daily portion of water regularly made using Python and Kivy Framework.</p>
+		</div>
 	<footer>
 		All rights reserved
 	</footer>

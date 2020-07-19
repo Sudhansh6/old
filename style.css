@@ -1,3 +1,7 @@
+html
+{
+	scroll-behavior: smooth;
+}
 *{
 	margin:0px;
 	padding:0px;
@@ -59,9 +63,8 @@ a:hover
 {
 	font-family: 'Hind', sans-serif;
 	font-size: 30px;
-	margin-top: 5vh;
 	padding-left: 2vw;
-	padding-top: 5vh;
+	padding-top: 2vh;
 	margin:5vw;
 }
 
@@ -85,7 +88,7 @@ a:hover
 		top: 50px;
 		left:0px;
 		background-color: rgb(45,45,65);
-		width:35vw;
+		width:40vw;
 		visibility: hidden;
 	}
 	.links li
@@ -99,6 +102,7 @@ a:hover
 		display: block;
 		cursor: pointer;
 	}
+
 }
 @media screen and (max-width: 800px)
 {
