@@ -50,6 +50,10 @@
 	align-items: center;
 	justify-content: space-around;
 }
+.icons
+{
+	flex-direction: column;
+}
 .icons ul
 {
 	margin-top: 30px;
