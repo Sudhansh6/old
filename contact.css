@@ -99,7 +99,8 @@ input:focus, textarea:focus
 }
 button
 {
-	width:100%;
+	width: 100%;
+	margin: 0px 10px;
 	background-color: rgb(220,220,240);
 	height:40px;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
