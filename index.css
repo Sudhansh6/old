@@ -53,14 +53,16 @@
 	{
 		border:none;
 	}
+	.intro
+	{
+		flex-direction: column-reverse;
+		justify-content: space-around;
+		align-items: center;
+	}
 	.image
 	{
-		visibility: hidden;
-		height: 0px;
-	}
-	.left
-	{
-		background-image: url(Pictures/pic.jpg);
+		padding: 10px 0px;
+		width:300px;
 	}
 }
 .slideanim {
